@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/require.js"></script>
+    <script type="text/javascript">
+        (function () {
+            var config = {
+                baseUrl: ''
+            };
+
+            var dependencies = [
+                'js/postmonger',
+                'js/customActivity'
+            ];
+
+            require(config, dependencies);
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="step1" class="step">
+        <div class="slds-grid">
+
+            <main class="slds-col">
+               
+                <h1>welcome to your activity!</h1>
+            </main>
+            
+
+        </div>
+        <div>
+        <a href="https://custom-activity-v1.herokuapp.com/journeybuilder/validate">Validate</a>
+        </div>
+
+    </div>
+</body>
+
+</html>
